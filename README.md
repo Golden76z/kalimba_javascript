@@ -15,11 +15,11 @@ A simple virtual kalimba that allows users to play notes, record melodies, and p
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/kalimba-web.git
-   cd kalimba-web
+   git clone https://github.com/Golden76z/kalimba_javascript.git
+   cd kalimba_javascript
    ```
 
-2. Open `index.html` in a web browser.
+2. Open `index.html` with the live preview extension on vscode.
 
 ## Usage
 
