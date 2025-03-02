@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #121212;
+    font-family: 'Poppins';
+    color: #f0f0f0;
+}
+
+.container {
+    font-size: large;
+    width: 90%;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #bb86fc;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.kalimba {
+    position: relative;
+    width: 100%;
+    height: 80%;
+    background: #1e1c22;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.tines-container {
+    position: relative;
+    width: 95%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.tine {
+    position: absolute;
+    background: #bb86fc;
+    border-radius: 0 0 24px 24px;
+    cursor: pointer;
+    transition: transform 0.1s;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    width: 40px !important;
+}
+
+.tine:hover {
+    background: #cf9fff;
+}
+
+.tine:active, .tine.active {
+    transform: translateY(-10px);
+    background: #d7abff;
+    box-shadow: 0 0 20px rgba(187, 134, 252, 0.7);
+}
+
+.tine::after {
+    content: attr(data-key);
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.controls {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background: #2d1b3d;
+    color: #bb86fc;
+    border: 2px solid #bb86fc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #3b2650;
+}
+
+.key-bindings {
+    margin-top: 20px;
+    padding: 10px;
+    background: rgba(45, 27, 61, 0.7);
+    border-radius: 5px;
+    text-align: center;
+    max-width: 100%;
+}
